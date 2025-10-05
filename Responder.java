@@ -37,6 +37,11 @@ public class Responder
         fillDefaultResponses();
         randomGenerator = new Random();
     }
+    
+    public HashMap<String,String> getResponseMap()
+    {
+        return responseMap;
+    }
 
     /**
      * Generate a response from a given set of input words.
