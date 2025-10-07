@@ -143,3 +143,38 @@ In the external source file, define the region with @start and @end tags.
 
 49b.
 file:///E:/Prog101/Personal%20Projects/tech-support-v1-copy/doc/package-summary.html
+
+
+44b.(explicit version):
+
+public void printWordsAndCountsV2
+{
+   HashSet<String> words = counts.keySet();
+   for(String word : words)
+   {
+      System.out.println(word + " : " + counts.get(word));\\shove it at the end of the start method of support system class.
+   }
+}
+OR
+
+public void printWordsAndCountsV3
+{
+   for(String word : counts.keySet())
+   {
+      System.out.println(word + " : " + counts.get(word));\\shove it at the end of the start method of support system class.
+   }
+}
+
+45b. if condition is on the print rather than the addWords method.
+
+public void printWordsAndCountsV4
+{
+   for(String word : counts.keySet())
+   {
+      if(responseMap.get(word) == null)
+      {
+      System.out.println(word + " : " + counts.get(word));\\shove it at the end of the start method of support system class.
+      }
+   }
+}
+
